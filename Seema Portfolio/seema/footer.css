@@ -1,0 +1,93 @@
+/* ============================================ */
+/* FOOTER - No Right Margin, Left Aligned, Blue Text */
+/* ============================================ */
+
+footer {
+    color: #2563eb !important;
+    text-align: left !important;
+    margin: 0 !important;
+    margin-right: 0 !important;      /* Right side margin ZERO - bilkul edge se */
+    margin-left: 0 !important;       /* Left side bhi zero */
+    padding: 0 !important;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+    width: 100%;
+    border-top: 2px solid rgba(37, 99, 235, 0.15);
+    margin-top: 50px;
+}
+
+/* Footer Text Styling */
+footer p, 
+footer h4,
+footer .footer-text {
+    margin: 0 !important;
+    padding: 20px 0 20px 25px !important;   /* Sirf left padding, right side ZERO */
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    background: transparent;
+    color: #2563eb !important;
+    text-align: left !important;
+    border: none;
+}
+
+/* Remove any extra margin from footer inside elements */
+footer div,
+footer .footer-content,
+footer .footer-text,
+footer span {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Footer ke andar kisi bhi container ka right margin zero */
+footer * {
+    margin-right: 0 !important;
+}
+
+/* Subtle decorative line on top left */
+footer::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, #8b5cf6, #facc15);
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+footer p:hover, 
+footer h4:hover {
+    color: #1e3a8a !important;
+    transition: color 0.3s ease;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    footer p, 
+    footer h4,
+    footer .footer-text {
+        padding: 16px 0 16px 20px !important;
+        font-size: 13px;
+    }
+    
+    footer::before {
+        margin-left: 20px;
+        width: 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer p, 
+    footer h4,
+    footer .footer-text {
+        padding: 14px 0 14px 16px !important;
+        font-size: 12px;
+    }
+    
+    footer::before {
+        margin-left: 16px;
+        width: 45px;
+    }
+}

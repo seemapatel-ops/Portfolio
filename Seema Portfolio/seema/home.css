@@ -1,0 +1,94 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:aliceblue;
+}
+.hero-image-container{
+position:relative;
+width:100%;
+max-width:1000px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.welcome-section{
+text-align:center;
+}
+.home-text p{
+font-size:1rem;
+color:#475569;
+margin-bottom:25px;
+line-height:1.7;
+}
+.home-text h1{
+font-size:2.2rem;
+margin-bottom:5px;   
+}
+.home-text h2{
+font-size:1.4rem;
+margin-bottom:8px;  
+}
+.home-text p{
+font-size:0.95rem;
+color:#475569;
+margin-bottom:12px;   
+line-height:1.5;      
+max-width:650px;
+margin-left:auto;
+margin-right:auto;
+}
+.home-text p:last-of-type {
+    margin-bottom:10 px;  
+}
+#home{
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px 20px;   
+}
+.welcome-text{
+font-size:2.5rem;
+font-weight:700;
+color:#2563eb;
+margin-bottom:3px;  
+}
+.hero-image-section{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:0px;   
+}
+.hero-bg-image{
+max-width:280px;   
+border-radius:12px;
+box-shadow:0 10px 25px #2563eb;
+}#home h1,
+#home h2,
+#home h3,
+#home h4,
+#home p {
+  margin: 0;
+}
+.btn-group {
+    display: flex;
+    justify-content: center;   
+}
+.btn {
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-primary { 
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+}
+.btn-outline {
+   background-color: #2563eb;
+    color: #fff;
+    border: none;
+}

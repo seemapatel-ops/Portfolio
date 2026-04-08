@@ -1,0 +1,185 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color:aliceblue;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body{
+font-family:'Poppins',sans-serif;
+background:#f5f7fb;
+color:#1e293b;
+line-height:1.6;
+}
+h1{
+text-align:center;
+margin-top:5px;
+font-size:25px;
+color:blue
+}
+p{
+text-align:center;
+color:#1e3a8a;
+margin-bottom:35px;
+}
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+.page-section{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:start;
+}
+.section-title{
+font-size:24px;
+color:#1e3a8a;
+display:flex;
+align-items:center;
+gap:8px;
+}
+.education-section{
+max-width:120px;
+margin:0px;
+padding:0 5px;
+}
+.education-cards{
+display:flex;
+flex-direction:column;
+gap:20px;
+align-items:flex-start;   /* left me laane ke liye */
+}
+.clg-details{
+background:#ffffff;
+padding:18px;
+border-radius:8px;
+box-shadow:0 3px 12px rgba(0,0,0,0.05);
+width:500px;   /* fixed width se left aligned dikhega */        
+}
+.clg-details:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+.clg-details h3{
+font-size:18px;
+color:#0f172a;
+margin-bottom:5px;
+}
+.clg-details h4{
+font-size:15px;
+color:#475569;
+margin-bottom:8px;
+}
+.clg-date{
+font-size:13px;
+color:#64748b;
+margin-bottom:6px;
+}
+.scl-details{
+background:#ffffff;
+padding:18px;
+border-radius:8px;
+box-shadow:0 3px 12px rgba(0,0,0,0.05);
+width:500px;
+}
+.scl-details:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+.scl-details h3{
+font-size:18px;
+color:#0f172a;
+margin-bottom:5px;
+}
+.scl-details h4{
+font-size:15px;
+color:#475569;
+margin-bottom:8px;
+}/* SKILLS SECTION */
+.skills-section{
+padding:60px 20px;
+background:#f8fafc;
+text-align:center;
+}
+.skills-title{
+font-size:32px;
+font-weight:600;
+margin-bottom:40px;
+color:#1e3a8a;
+}
+.skills-container{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+}
+.skill-card{
+background:#ffffff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.skill-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+.skill-card h3{
+font-size:18px;
+color:#1e293b;
+margin-bottom:10px;
+}
+.skill-card p{
+font-size:14px;
+color:#64748b;
+}
+.certifications-section{
+grid-column:2;
+margin-top:20px;
+}
+.cert-grid{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+.cert-card{
+background:#ffffff;
+padding:15px;
+border-radius:8px;
+box-shadow:0 3px 12px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+.cert-card:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 18px rgba(0,0,0,0.08);
+}
+.cert-card h4{
+font-size:15px;
+color:#0f172a;
+}
+.cert-card p{
+text-align:left;
+font-size:13px;
+margin-top:5px;
+}
+@media(max-width:900px){
+
+.page-section{
+grid-template-columns:1fr;
+}
+.education-section,
+.tech-skills-section,
+.certifications-section{
+grid-column:1;
+}
+.skills-categories{
+grid-template-columns:1fr;
+}
+
+}

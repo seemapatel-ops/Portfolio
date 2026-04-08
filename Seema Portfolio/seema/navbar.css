@@ -1,0 +1,172 @@
+/* =============================================
+   EXTERNAL CSS - Fixed Navbar Alignment
+   ============================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Nav Container */
+nav .nav-container {
+    width: 100%;                 /* FULL WIDTH */
+    margin: 0;
+    padding: 16px 30px;          /* left-right spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo Styling */
+nav .logo {
+    font-size: 26px;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #facc15 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-right: 80px;
+}
+
+nav .logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Links */
+nav .nav-links {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    margin-left: auto;           /* RIGHT ALIGN */
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 0;
+    position: relative;
+    transition: 0.3s ease;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Underline Hover Effect */
+nav .nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #facc15;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+nav .nav-links li a:hover::after {
+    width: 100%;
+}
+
+nav .nav-links li a:hover {
+    color: #facc15;
+}
+
+nav .nav-links li a.active {
+    color: #facc15;
+}
+
+nav .nav-links li a.active::after {
+    width: 100%;
+}
+
+/* Menu Button */
+.menu-btn {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 75%;
+        height: calc(100vh - 70px);
+        background: linear-gradient(180deg, #1e3a8a 0%, #2563eb 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+        gap: 35px;
+        transition: left 0.4s ease;
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.25);
+        z-index: 999;
+    }
+
+    nav .nav-links.active {
+        left: 0;
+    }
+
+    nav .nav-links li a {
+        font-size: 18px;
+        padding: 12px 25px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .logo {
+        font-size: 22px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    nav .nav-links {
+        width: 85%;
+        gap: 30px;
+    }
+
+    .menu-btn {
+        padding: 6px 12px;
+        font-size: 24px;
+    }
+}
